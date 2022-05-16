@@ -5,6 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'crypto-update';
+
+  selectedCurrency : string = "USD";
+
+  constructor(){
+
+  }
+
+  sendCurrency(event:string){
+    console.log(event);
+  }
 }
+
